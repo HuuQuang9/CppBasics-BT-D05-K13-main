@@ -38,15 +38,8 @@ int main()
     cout << "I am " << age << " years old" << '\n';
     cout << "I am from " << address << '\n';
 
-    
-    //std::cout << "Hello BT-D05-K13\n";
-    //std::cout << "Hello BT-D05-K13\n";
-    //std::cout << "Hello BT-D05-K13\n";
-    //std::cout << "Hello BT-D05-K13\n";
-    /*
-    std::cout << "Hello BT-D05-K13\n";
-    std::cout << "Hello BT-D05-K13\n";
-    */
+   // loi ko dc 
+   
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
