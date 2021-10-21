@@ -10,7 +10,7 @@ int main()
 	int sv = 0;
 	cout << "co bao nhieu sinh vien: ";
 	cin >> sv;
-	cin.ignore(1, '\n');
+	cin.ignore(10, '\n');
 	string name[10];
 	int age[10];
 	string lop[10];
@@ -63,7 +63,7 @@ int main()
 		cout << "age: " << age[j] << endl;
 		cout << "class: " << lop[j] << endl;
 		cout << "xep loai: " << xeploai[j] << endl;
-		cout << "so thich: " << sothich[j] << '\n';
+		cout << "so thich: " << sothich[j] << endl;
 	}
 }
 
