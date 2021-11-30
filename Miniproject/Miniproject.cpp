@@ -1,11 +1,16 @@
 ﻿#include <iostream>
 #include <string>
+#include "Employee.h"
 
 using namespace std;
 
 int main()
 {
-    
+    Employee* e{ new Employee() };
+
+    e->input();
+
+    e->show();
 }
 /*
 quản lí nhân viên
@@ -25,4 +30,8 @@ quản lí nhân viên
 /*
 -- Employee: id, name, email, phone,...// doWork()
 -- Subclass: Programmer, Tester, Manager (public: Employe)
+
+
 */
+
+//30/11/2021 : getters , testter, subclass
