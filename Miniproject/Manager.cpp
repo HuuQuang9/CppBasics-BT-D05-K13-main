@@ -5,7 +5,7 @@ void Manager::input()
 	Employee::input();
 	cout << "enter year: ";
 	cin >> m_year;
-	cout << "enter month";
+	cout << "enter month: ";
 	cin >> m_month;
 
 }

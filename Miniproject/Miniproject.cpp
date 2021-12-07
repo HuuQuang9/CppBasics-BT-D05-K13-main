@@ -40,8 +40,8 @@ int main()
  */   
 
     vector<Employee*> list{};
-    list.push_back(t);
     list.push_back(p);
+    list.push_back(t);
     list.push_back(m);
 
     for (int i = 0; i < list.size(); i++) {
