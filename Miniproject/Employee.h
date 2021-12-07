@@ -7,8 +7,8 @@ using namespace std;
 
 class Employee
 {
-private:
-	int m_id;
+protected:
+	int m_id{ 0 };
 	string m_name;
 	string m_email;
 	string m_phone;
@@ -21,9 +21,9 @@ public:
 		: m_id{ id }, m_name{ name }
 	{}
 	//
-	void show();
+	virtual void show();
 
-	void input();
+	virtual void input();
 
 	//gettesr, setters
 

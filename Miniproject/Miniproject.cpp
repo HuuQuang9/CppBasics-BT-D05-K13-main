@@ -1,16 +1,55 @@
 ﻿#include <iostream>
 #include <string>
 #include "Employee.h"
+#include "Programmer.h"
+#include "Testter.h"
+#include <vector>
 
 using namespace std;
 
 int main()
 {
-    Employee* e{ new Employee() };
+     Employee* e{ new Employee() };
 
-    e->input();
+   /* e->input();
 
-    e->show();
+    e->show();*/
+
+    Employee* p{ new Programmer() };
+    /*
+
+    p->input();
+    
+    p->show();
+
+    Employee* t{ new Testter() };
+
+    t->input();
+
+    t->show();*/
+
+ /*   vector<int> numbers{ 1, 2, 3, 4, 5 };
+    cout << numbers[0] << '\n';
+    cout << numbers.at(1) << endl;
+
+    numbers.push_back(100);
+    cout << numbers.at(5);
+ */   
+
+    vector<Employee*> list{};
+    list.push_back(e);
+    list.push_back(p);
+
+    for (int i = 0; i < list.size(); i++) {
+        list.at(i)->input();
+    }
+
+    for (Employee* e : list) {
+        e->show();
+    }
+
+
+
 }
 /*
 quản lí nhân viên
@@ -35,3 +74,7 @@ quản lí nhân viên
 */
 
 //30/11/2021 : getters , testter, subclass
+
+//tester : category (database, network....)
+
+//manager : year , yoe...
