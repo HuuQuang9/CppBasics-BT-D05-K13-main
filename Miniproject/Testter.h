@@ -10,7 +10,7 @@ public:
 	Testter() {};
 	Testter(int id,string name) :Employee{ id, name }
 	{};
-	virtual void show();
-	virtual void input();
+	 void show() override ;
+	 void input() override ;
 };
 

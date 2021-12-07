@@ -3,6 +3,7 @@
 void Programmer::show()
 {
 	Employee::show();
+	cout << "I am programmer." << endl;
 	cout << m_name <<" write code: " << m_programinglanguage << endl;
 }
 

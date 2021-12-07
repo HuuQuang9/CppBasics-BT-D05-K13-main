@@ -4,18 +4,21 @@
 #include "Programmer.h"
 #include "Testter.h"
 #include <vector>
+#include "Manager.h"
 
 using namespace std;
 
 int main()
 {
-     Employee* e{ new Employee() };
+     /*Employee* e{ new Employee() };*/
 
    /* e->input();
 
     e->show();*/
 
     Employee* p{ new Programmer() };
+    Employee* t{ new Testter() };
+    Employee* m{ new Manager() };
     /*
 
     p->input();
@@ -37,12 +40,14 @@ int main()
  */   
 
     vector<Employee*> list{};
-    list.push_back(e);
+    list.push_back(t);
     list.push_back(p);
+    list.push_back(m);
 
     for (int i = 0; i < list.size(); i++) {
         list.at(i)->input();
     }
+
 
     for (Employee* e : list) {
         e->show();

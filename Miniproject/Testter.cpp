@@ -2,12 +2,13 @@
 #include "Testter.h"
 void Testter::show()
 {
-	cout << "Tester code: "<< m_testcode;
+	Employee::show();
+	cout << "I am Tester, i test code: "<< m_testcode;
 }
 
 void Testter::input()
 {
 	Employee::input();
-	cout << "Enter tester code: ";
+	cout << "Enter language code : ";
 	getline(cin, m_testcode);
 }
