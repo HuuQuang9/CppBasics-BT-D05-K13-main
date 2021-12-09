@@ -13,6 +13,6 @@ void Manager::input()
 void Manager::show()
 {
 	Employee::show();
-	cout << "I am Manager." << endl;
-	cout << "I have been working " << m_year << " year and " << m_month << "month.";
+	cout << "I am Manager, I have been working" << endl;
+	
 }

@@ -5,6 +5,9 @@
 #include "Testter.h"
 #include <vector>
 #include "Manager.h"
+#include <fstream>
+#include "Utils.h"
+
 
 using namespace std;
 
@@ -16,9 +19,9 @@ int main()
 
     e->show();*/
 
-    Employee* p{ new Programmer() };
+ /*   Employee* p{ new Programmer() };
     Employee* t{ new Testter() };
-    Employee* m{ new Manager() };
+    Employee* m{ new Manager() };*/
     /*
 
     p->input();
@@ -39,8 +42,10 @@ int main()
     cout << numbers.at(5);
  */   
 
-    vector<Employee*> list{};
-    list.push_back(p);
+   /* vector<Employee*> list{};*/
+
+
+    /*list.push_back(p);
     list.push_back(t);
     list.push_back(m);
 
@@ -51,8 +56,31 @@ int main()
 
     for (Employee* e : list) {
         e->show();
+    }*/
+
+
+    vector<Employee*> list{};
+    ifstream filein{ "input.txt" };
+    //doc du lieu tu file.
+    string line;
+    while (getline(filein, line)); {
+        auto vec = Utils::split(line, ",");
+
+        if (vec.at(0) == "1") {
+            list.push_back(new Programmer(stoi(vec.at(1)), vec.at(2)));
+        }
+        else if (vec.at(0) == "2") {
+            list.push_back(new Testter(stoi(vec.at(1)), vec.at(2)));
+        }
+        else if (vec.at(0) == "3") {
+            list.push_back(new Manager(stoi(vec.at(1)), vec.at(2))); 
+        }
     }
 
+    //
+    for (Employee* e : list) {
+        e->show();
+    }
 
 
 }

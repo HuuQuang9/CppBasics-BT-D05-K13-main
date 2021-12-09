@@ -3,7 +3,7 @@
 void Testter::show()
 {
 	Employee::show();
-	cout << "I am Tester, i test code: " << m_testcode << endl;
+	cout << "I am Tester, i test code: " <<  endl;
 }
 
 void Testter::input()
