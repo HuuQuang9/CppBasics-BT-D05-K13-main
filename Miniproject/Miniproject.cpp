@@ -8,6 +8,23 @@
 #include <fstream>
 #include "Utils.h"
 
+void showmenu() {
+    cout << "--------------------Menu-------------------" << endl;
+    cout << "1. ADD Employee" << endl;
+    cout << "2. EDIT Employee" << endl;
+    cout << "3. REMOVE Employee" << endl;
+    cout << "4. Sort Employee by name" << endl;
+    cout << "5. Show all Employee" << endl;
+    cout << "0. Exit" << endl;
+    cout << "-------------------------------------------" << endl;
+}
+
+void showall(vector<Employee*> list) {
+    for (Employee* a : list) {
+        a->show();
+    }
+}
+
 
 using namespace std;
 
@@ -63,7 +80,7 @@ int main()
     ifstream filein{ "input.txt" };
     //doc du lieu tu file.
     string line;
-    while (getline(filein, line)); {
+    while (getline(filein, line)) {
         auto vec = Utils::split(line, ",");
 
         if (vec.at(0) == "1") {
@@ -77,12 +94,45 @@ int main()
         }
     }
 
-    //
-    for (Employee* e : list) {
-        e->show();
+    
+    /*for (Employee*  a: list) {
+        a ->show();
+    }*/
+    int choose;
+    bool exit{ false };
+
+    showmenu();
+    while (true) {
+        cout << "Please choose: ";
+        cin >> choose;
+        switch (choose) {
+        case 1:
+            cout << "ADD Emloyee" << endl;
+            break;
+        case 2:
+            cout << "EDIT Employee" << endl;
+            break;
+        case 3 :
+            cout << "REMOVE Employee" << endl;
+            break;
+        case 4:
+            cout << "Shprt Employee by name" << endl;
+            break;
+        case 5 :
+            cout << "Show all Employee" << endl;
+            showall(list);
+            break;
+        case 0:
+            cout << "Exit" << endl;
+            exit = true;
+            break;
+        }
+        if (exit) {
+            break;
+        }
+        showmenu();
     }
-
-
+    
 }
 /*
 quản lí nhân viên
@@ -111,3 +161,9 @@ quản lí nhân viên
 //tester : category (database, network....)
 
 //manager : year , yoe...
+
+//9/12/2021 
+//- ADD Employee
+// + Menu chọn loại nhân viên (pr,tr,mr)
+// + if ...=> new nhân viên mới => list.push_back()
+// +

@@ -1,5 +1,5 @@
 #include "Testter.h"
-#include "Testter.h"
+
 void Testter::show()
 {
 	Employee::show();
