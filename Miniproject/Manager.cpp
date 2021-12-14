@@ -3,16 +3,16 @@
 void Manager::input()
 {
 	Employee::input();
-	cout << "enter year: ";
-	cin >> m_year;
-	cout << "enter month: ";
-	cin >> m_month;
+	cout << "enter yoe: ";
+	cin >> m_yoe;
+	
+	
 
 }
 
 void Manager::show()
 {
 	Employee::show();
-	cout << "I am Manager, I have been working" << endl;
+	cout << "I am Manager, I have been working..." <<m_yoe << endl;
 	
 }

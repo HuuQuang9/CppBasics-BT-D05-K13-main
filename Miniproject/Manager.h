@@ -5,8 +5,8 @@
 class Manager :public Employee
 {
 protected:
-	string m_year;
-	string m_month;
+	string m_yoe;
+	
 	
 public: 
 	Manager() {};

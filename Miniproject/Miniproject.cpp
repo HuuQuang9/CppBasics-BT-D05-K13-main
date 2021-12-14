@@ -25,6 +25,64 @@ void showall(vector<Employee*> list) {
     }
 }
 
+void menunv() {
+    cout << "--------------- Lua chon nhan vien ---------------" << endl;
+    cout << "1.Nhan vien Programmer" << endl;
+    cout << "2.Nhan vien Testter" << endl;
+    cout << "3.Nhan vien Manager" << endl;
+    cout << "0.exit" << endl;
+    cout << "--------------------------------------------------" << endl;
+
+}
+
+void addemployee(vector<Employee*> list) {
+    
+    int chose;
+    menunv();
+    
+    bool exit{ false };
+    
+    while (true) {
+        cin >> chose;
+        switch(chose) {
+        
+
+        case 1:
+            list.push_back(new Programmer);
+            
+            list.at(list.size() - 1)->input();
+            break;
+            
+        case 2:
+            list.push_back(new Testter);
+            
+            list.at(list.size() -1)->input();
+            list.at(list.size() -1)->show();
+            break;
+        case 3:
+            list.push_back(new Manager);
+            
+            list.at(list.size() -1)->input();
+            break;
+        case 0:
+            exit = true;
+            break;
+
+        }
+        
+        if (exit) {
+            break;
+        }
+        menunv();
+
+            
+
+
+
+    }
+   
+}
+
 
 using namespace std;
 
@@ -108,6 +166,7 @@ int main()
         switch (choose) {
         case 1:
             cout << "ADD Emloyee" << endl;
+            addemployee(list);
             break;
         case 2:
             cout << "EDIT Employee" << endl;
