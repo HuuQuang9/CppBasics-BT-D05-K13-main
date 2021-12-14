@@ -26,6 +26,6 @@ public:
 	virtual void input();
 
 	//gettesr, setters
-
+	string getname();
 };
 

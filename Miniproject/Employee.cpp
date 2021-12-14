@@ -18,3 +18,9 @@ void Employee::input()
 	cout << "enter email: ";
 	getline(cin, m_email);
 }
+
+string Employee::getname()
+{
+	 
+	return m_name;
+}

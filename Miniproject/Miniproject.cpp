@@ -8,6 +8,9 @@
 #include <fstream>
 #include "Utils.h"
 
+using namespace std;
+
+
 void showmenu() {
     cout << "--------------------Menu-------------------" << '\n';
     cout << "1. ADD Employee" << endl;
@@ -91,9 +94,32 @@ void addemployee(vector<Employee*> &list) {
     }
    
 }
+Employee* Findbyname(vector<Employee*>& list, string  name) {
+    for (auto e : list) {
+        if (e->getname().compare(name) == 0) {
+            return e;
+        }
+        return nullptr;
+    }
+}
 
 
-using namespace std;
+void Editemployee(vector<Employee*>& list,string name) {
+    auto e = Findbyname(list, name);
+
+    e->input();
+
+}
+
+void Removeemployee(vector<Employee*>& list, string name) {
+    auto e = Findbyname(list, name);
+
+    auto index = find(list.begin(), list.end(), e);
+
+    list.erase(index);
+
+
+}
 
 int main()
 {
@@ -165,26 +191,43 @@ int main()
     /*for (Employee*  a: list) {
         a ->show();
     }*/
+    string name;
     int choose;
     bool exit{ false };
-
+    
     showmenu();
     while (true) {
         cout << "Please choose: ";
         cin >> choose;
+        cin.ignore(100, '\n');
         switch (choose) {
         case 1:
             cout << "ADD Emloyee" << endl;
             addemployee(list);
             break;
         case 2:
-            cout << "EDIT Employee" << endl;
+        {   
+            
+            cout << "EDIT Employee" << '\n';
+            cout << "enter name: " ;
+            
+            
+            getline(cin, name);
+            Editemployee(list, name);
+        }
             break;
         case 3 :
-            cout << "REMOVE Employee" << endl;
+        {
+            cout << "REMOVE Employee" << '\n';
+            cout << "enter name: " ;
+            
+            
+            getline(cin, name);
+            Removeemployee(list, name);
+        }
             break;
         case 4:
-            cout << "Shprt Employee by name" << endl;
+            cout << "Short Employee by name" << endl;
             break;
         case 5 :
             cout << "Show all Employee" << endl;
@@ -235,3 +278,8 @@ quản lí nhân viên
 // + Menu chọn loại nhân viên (pr,tr,mr)
 // + if ...=> new nhân viên mới => list.push_back()
 // +
+
+/*
+find name 
+
+*/
