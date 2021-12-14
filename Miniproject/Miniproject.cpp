@@ -9,7 +9,7 @@
 #include "Utils.h"
 
 void showmenu() {
-    cout << "--------------------Menu-------------------" << endl;
+    cout << "--------------------Menu-------------------" << '\n';
     cout << "1. ADD Employee" << endl;
     cout << "2. EDIT Employee" << endl;
     cout << "3. REMOVE Employee" << endl;
@@ -26,19 +26,20 @@ void showall(vector<Employee*> list) {
 }
 
 void menunv() {
-    cout << "--------------- Lua chon nhan vien ---------------" << endl;
-    cout << "1.Nhan vien Programmer" << endl;
-    cout << "2.Nhan vien Testter" << endl;
-    cout << "3.Nhan vien Manager" << endl;
-    cout << "0.exit" << endl;
-    cout << "--------------------------------------------------" << endl;
+    cout << "--------------- Lua chon nhan vien ---------------" << '\n';
+    cout << "1.Nhan vien Programmer" << '\n';
+    cout << "2.Nhan vien Testter" << '\n';
+    cout << "3.Nhan vien Manager" << '\n';
+    cout << "0.exit" << '\n';
+    cout << "--------------------------------------------------" << '\n';
 
 }
 
-void addemployee(vector<Employee*> list) {
+void addemployee(vector<Employee*> &list) {
     
     int chose;
     menunv();
+    
     
     bool exit{ false };
     
@@ -48,21 +49,29 @@ void addemployee(vector<Employee*> list) {
         
 
         case 1:
-            list.push_back(new Programmer);
+        {
+            Employee* e{ new Programmer{} };
+
+			e->input();
+
+			list.push_back(e);
+        }
             
-            list.at(list.size() - 1)->input();
             break;
             
         case 2:
-            list.push_back(new Testter);
-            
-            list.at(list.size() -1)->input();
-            list.at(list.size() -1)->show();
+        {   
+            Employee* e{ new Testter{} };
+            e->input();
+            list.push_back(e);
+        }
             break;
         case 3:
-            list.push_back(new Manager);
-            
-            list.at(list.size() -1)->input();
+        {
+            Employee* e{ new Manager{} };
+            e->input();
+            list.push_back(e);
+        }
             break;
         case 0:
             exit = true;
