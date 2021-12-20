@@ -3,7 +3,7 @@
 vector<string> Utils::split(string target, string delim)
 {
 	vector<string> v;
-
+	
 	size_t pos{ 0 };
 	string token;
 
@@ -14,8 +14,8 @@ vector<string> Utils::split(string target, string delim)
 		target.erase(0, pos + delim.length());
 	}
 	//target = trim(target);
-	v.push_back(trim(target));
-
+	v.push_back(trim(target)); 
+	//tra ve vector chua string
 	return v;
 }
 
