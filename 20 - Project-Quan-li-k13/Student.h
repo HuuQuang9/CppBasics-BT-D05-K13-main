@@ -4,7 +4,7 @@
 #include <string>
 
 
-class Student : public Employee
+class Student : public Employee 
 {
 protected:
 	string m_degree; //khoas vd : k13
@@ -14,11 +14,11 @@ protected:
 
 public:
 	Student() {};
-	Student(string name, string id, string birth, string gender, string email, string classs, string degree,string address)
-		:Employee{ name, id, birth, gender, email}, m_class{classs}, m_degree{degree},m_address{address}
-	{};
+	Student(string name, int id, string birth, string gender, string email)/*, string classs, string degree,string address)*/
+		:Employee{ name, id, birth, gender, email}/*, m_class{classs}, m_degree{degree},m_address{address}*/
+	{}
 
-	void show() override;
+	virtual void show() ;
 
-	void input() override;
+	virtual void input() ;
 };

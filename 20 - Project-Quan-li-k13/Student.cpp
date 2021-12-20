@@ -1,6 +1,8 @@
 
 #include "Student.h"
 
+using namespace std;
+
 void Student::show()
 {
 	Employee::show();

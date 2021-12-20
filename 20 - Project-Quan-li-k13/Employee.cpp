@@ -4,7 +4,7 @@ using namespace std;
 
 void Employee::show() 
 {
-	cout << m_id << " " << m_name << " " <<m_gender<<" "<< m_email << " ";
+	cout <<"BKC" << m_id << " " << m_name << " " << m_gender << " " << m_email << " ";
 }
 
 void Employee::input()
