@@ -4,7 +4,7 @@ using namespace std;
 
 void Employee::show() 
 {
-	cout << m_id << " " << m_name << " " << m_email <<" ";
+	cout << m_id << " " << m_name << " " <<m_gender<<" "<< m_email << " ";
 }
 
 void Employee::input()
@@ -16,6 +16,11 @@ void Employee::input()
 
 	cout << "enter name: ";
 	getline(cin, m_name);
+
+	cout << "enter gender: ";
+	cin >> m_gender;
+
+	cin.ignore(10, '\n');
 
 	cout << "enter email";
 	getline(cin, m_email);

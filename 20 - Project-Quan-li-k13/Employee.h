@@ -7,20 +7,22 @@ using namespace std;
 class Employee
 {
 protected:
-	int m_id{ 0 };
-	string m_name;
-	string m_email;
-	string m_address;
+	string m_id{ 0 }; //id  vd:bkc13220
+	string m_name; // ho ten  vd: nguyen huu quang
+	string m_birth; // ngay thang nam sinh vd: 09/11/2003
+	string m_gender; //gioi tinh : nam/nu 
+	string m_email; //email  vd:quang.bkc13220@student.bkacad.edu.vn
+	 
 
 
 public:
 	Employee() {};
-	Employee(int id, string name, string email, string address) :m_id{ id }, m_name{ name }, m_email{ email }, m_address{address}
+	Employee(string name, string id,string birth, string gender, string email) :m_id{ id }, m_name{ name }, m_gender{ gender }, m_email{ email }
 	{}
 
-	void show();
+	virtual void show();
 
-	void input();
+	virtual void input();
 
 	string getname();
 };

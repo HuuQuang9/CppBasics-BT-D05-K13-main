@@ -1,0 +1,28 @@
+Đỗ Đức Long,BKC13212,21.03.2002,Nam,long.bkc13212@student.bkacad.edu.vn,BT_D05K13
+Hoàng Phúc Thành,BKC13213,29.08.2003,Nam,thanh.bkac13213@student.bkacad.edu.vn,BT_D05K13
+Lê Văn Ngọc Linh,BKC13214,31.08.2003,Nam,ling.bkc13214@student.bkacad.edu.vn,BT_D05K13
+Nguyễn Đức Đông,BKC13215,19.01.2003,Nam,dong.bkc13215@student.bkacad.edu.vn,BT_D05K13
+Lê Đắc Phúc,BKC13216,30.11.2003,Nam,phuc.bkc13216@student.bkacad.edu.vn,BT_D05K13
+Nguyễn Mạnh Hùng,BKC13217,07.12.2003,Nam,hung.bkc13217@student.bkacad.edu.vn,BT_D05K13
+Phạm Hữu Hưng,BKC13218,06-10-2003,Nam,hung.bkc13218@student.bkacad.edu.vn,BT_D05K13
+Nguyễn Thịnh Hưng,BKC13219,16.04.2003,Nam,hung.bkc13219@student.bkacad.edu.vn,BT_D05K13
+Nguyễn Hữu Quang,BKC13220,09.11.2003,Nam,quang.bkc13220@student.bkacad.edu.vn,BT_D05K13
+Trần Thị Hồng,BKC13221,17.06.2003,Nữ,hong.bkc13221@student.bkacad.edu.vn,BT_D05K13
+Dương Việt Hoàng,BKC13222,05.11.2003,Nam,hoang.bkc13222@student.bkacad.edu.vn,BT_D05K13
+Cao Trung Kiên,BKC13223,15.04.2003,Nam,kien.bkc13223@student.bkacad.edu.vn,BT_D05K13
+Vũ Thế Bằng,BKC13224,11.10.2003,Nam,bang.bkc13224@student.bkacad.edu.vn,BT_D05K13
+Phùng Khánh Duy,BKC13225,05.12.2002,Nam,duy.bkc13225@student.bkacad.edu.vn,BT_D05K13
+Lê Ngọc Huân,BKC13226,26.11.2003,Nam,huan.bkc13226@student.bkacad.edu.vn,BT_D05K13
+Nguyễn Quang Anh,BKC13227,11.9.2003,Nam,anh.bkc13227@student.bkacad.edu.vn,BT_D05K13
+Đỗ Anh Dũng,BKC13229,25.01.2000,dung.bkc13229@student.bkacad.edu.vn,NamBT_D05K13
+Nguyễn Anh Tú,BKC13428,28.07.2003,tu.bkc13428@student.bkacad.edu.vn,NamBT_D05K13
+Trần Ngọc Huy,BKC13429,13.01.2003,huy.bkc13429@student.bkacad.edu.vn,NamBT_D05K13
+Trương Quý Hải,BKC13430,12.02.2003,hai.bkc13430@student.bkacad.edu.vn,NamBT_D05K13
+Trần Ngọc Huy,BKC13451,13.01.2003,Nam,huy.bkc13451@student.bkacad.edu.vn,BT_D05K13
+Trương Quý Hải,BKC13452,12.02.2003,Nam,hai.bkc13452@student.bkacad.edu.vn,BT_D05K13
+Nguyễn Mạnh Tú,BKC13453,29.10.2003,Nam,tu.bkc13453@student.bkacad.edu.vn,BT_D05K13
+Nguyễn Huy Hưng,BKC13454,Nam,hung.bkc13454@student.bkacad.edu.vn,BT_D05K13
+Ngô Thanh Tùng,BKC13455,08-02-2002,Nam,tung.bkc13455@student.bkacad.edu.vn,BT_D05K13
+Phạm Hữu Hưng,BKC13456,06-10-2003,Nam,hung.bkc13456@student.bkacad.edu.vn,BT_D05K13
+Vũ Nguyễn Ngọc Anh,BKC13457,29.06.2003,Nam,anh.bkc13457@student.bkacad.edu.vn,BT_D05K13
+Lành Thanh Tùng,BKC13458,09.02.2002,Nam,tung.bkc13458@student.bkacad.edu.vn,BT_D05K13
