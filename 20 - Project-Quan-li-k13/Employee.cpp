@@ -22,12 +22,17 @@ void Employee::input()
 
 	cin.ignore(10, '\n');
 
-	cout << "enter email";
+	cout << "enter email: ";
 	getline(cin, m_email);
 
 }
 
-string Employee::getname()
+string Employee::Getname()
 {
 	return m_name;
+}
+
+int Employee::Getid()
+{
+	return m_id;
 }
