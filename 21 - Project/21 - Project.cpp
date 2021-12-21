@@ -1,4 +1,4 @@
-﻿#include "Employee.h"
+#include "Employee.h"
 #include "Student.h"
 #include "Utils.h"
 #include <iostream>
@@ -8,7 +8,7 @@
 #include <algorithm>
 
 using namespace std;
-ông tạo 1 project mới rồi copy y nguyên qua xem
+
 void Menu() {
     cout << "--------------------Menu--------------------" << '\n';
     cout << "1.Edit student" << '\n';
